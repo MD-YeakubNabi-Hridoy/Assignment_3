@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Games Hockey</title>
 
-    <!-- font awesome link -->
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,6 +16,9 @@
     <!-- daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/0bfd3cdb3c.js" crossorigin="anonymous"></script>
 
     <!-- css style -->
     <style>
@@ -27,7 +30,66 @@
 </head>
 
 <body class="manrope-font">
-
+    <header class="w-4/5 mx-auto mt-10 flex justify-between items-center gap-4 lg:gap-8">
+        <div class="lg:hidden md:block text-xl">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <h1 class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</h1>
+        </div>
+        <div class="nav">
+            <ul class="hidden md:hidden lg:flex items-center gap-10 text-xl font-semibold">
+                <li class="text-red-500"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-btn flex items-center gap-4">
+            <i class="hidden lg:block fa-solid fa-magnifying-glass text-xl font-semibold"></i>
+            <button class="btn bg-red-500 text-xl font-bold text-white"> Get Ticket</button>
+        </div>
+    </header>
+    <main class="w-4/5 mx-auto mt-12">
+        <section class="banner">
+            <div class="carousel w-full rounded-2xl relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-x-1/2 lg:-translate-x-0 bottom-4 lg:left-5 left-1/2 gap-3">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-red-500">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-red-500">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/banner1.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-x-1/2 lg:-translate-x-0 bottom-4 lg:left-5 left-1/2 gap-3">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-red-500">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-red-500">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/banner2.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-x-1/2 lg:-translate-x-0 bottom-4 lg:left-5 left-1/2 gap-3">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-red-500">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-red-500">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/banner3.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-x-1/2 lg:-translate-x-0 bottom-4 lg:left-5 left-1/2 gap-3">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-red-500">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-red-500">❯</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="lg:w-2/5 p-8 bg-black absolute lg:right-14 -bottom-20 lg:bottom-14 rounded-xl">
+                <h3 class="text-xl font-bold text-white">Meet all the heroes from the field</h3>
+                <p class="text-sm text-gray-400 mt-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
